@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 02, 2023 at 01:12 PM
--- Server version: 10.4.19-MariaDB
--- PHP Version: 8.2.0
+-- Generation Time: Jun 23, 2023 at 05:39 PM
+-- Server version: 10.4.18-MariaDB
+-- PHP Version: 8.0.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -38,12 +38,22 @@ CREATE TABLE `store` (
 --
 
 INSERT INTO `store` (`id`, `name`, `category`) VALUES
-(14, 'First Item', 1),
-(15, 'Second Item', 1),
-(16, 'First que', 2),
-(17, 'second que', 2),
-(18, 'A-item', 1),
-(19, 'A-item1', 2);
+(18, '2', 1),
+(21, '1', 1),
+(22, '4', 1),
+(51, '2', 2),
+(52, '1', 2),
+(53, '4', 2),
+(54, '7', 2),
+(55, '6', 2),
+(56, '3', 1),
+(60, '3', 2),
+(61, '6', 1),
+(62, '5', 1),
+(63, '7', 1),
+(64, '5', 2),
+(65, '8', 1),
+(66, '8', 2);
 
 -- --------------------------------------------------------
 
@@ -69,7 +79,11 @@ INSERT INTO `users` (`id`, `fullname`, `username`, `password`) VALUES
 (4, 'Testing', 'test', '123 '),
 (5, 'New test', 'user1', '202cb962ac59075b964b'),
 (6, 'User 2 Test', 'lewis', '202cb962ac59075b964b07152d234b70'),
-(7, 'Testing ', 'testing@gmail.com', '202cb962ac59075b964b07152d234b70');
+(7, 'Testing ', 'testing@gmail.com', '202cb962ac59075b964b07152d234b70'),
+(8, 'HABUMUGISHA Eric', 'Ofla', 'e09e54c367c4ce69ddb68557ee0e86ec'),
+(10, 'HABUMUGISHA Eric', 'eric', '202cb962ac59075b964b07152d234b70'),
+(11, 'GGG', 'KK', '123'),
+(12, 'HABUMUGISHA Ericl', 'erickk', '123');
 
 --
 -- Indexes for dumped tables
@@ -95,13 +109,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `store`
 --
 ALTER TABLE `store`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
